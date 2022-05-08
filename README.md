@@ -1,6 +1,6 @@
 # React Masonry Grid Filter Component
 
-![image](/my-app/public/images/app-preview.png)
+![image](https://github.com/tstrife777/React-Masonry-Grid-Filter/blob/master/public/images/app-preview.png)
 
 # Getting Started with Create React App
 
