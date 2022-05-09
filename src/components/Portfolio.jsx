@@ -17,7 +17,7 @@ const Portfolio = () => {
   }, []);
 
   return (
-    <div className="container mx-auto py-16">
+    <div className="lg:container lg:w-[1400px] mx-auto py-16">
       <Filter
         posts={posts}
         setFiltered={setFiltered}
