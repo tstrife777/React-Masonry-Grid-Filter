@@ -13,7 +13,7 @@ function Filter({ setActiveCat, activeCat, setFiltered, posts }) {
   }, [activeCat]);
 
   return (
-    <div className="filter-container flex p-5">
+    <div className="filter-container p-5">
       <button
         onClick={() => setActiveCat(0)}
         className={"btn " + (activeCat === 0 ? "active" : "")}

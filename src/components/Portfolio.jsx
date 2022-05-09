@@ -24,7 +24,7 @@ const Portfolio = () => {
         setActiveCat={setActiveCat}
         activeCat={activeCat}
       />
-      <div className="portfolio-items lg:container masonry-3-col mx-auto gap-10">
+      <div className="portfolio-items lg:container lg:masonry-3-col md:masonry-2-col mx-auto">
         <AnimatePresence>
           {filtered.map((post) => {
             return <Post key={post.id} post={post} posts={posts} />;
