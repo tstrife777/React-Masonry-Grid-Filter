@@ -25,11 +25,11 @@ const Portfolio = () => {
         activeCat={activeCat}
       />
       <div className="portfolio-items lg:container lg:masonry-3-col md:masonry-2-col mx-auto">
-        <div>
+        <AnimatePresence>
           {filtered.map((post) => {
             return <Post key={post.id} post={post} posts={posts} />;
           })}
-        </div>
+        </AnimatePresence>
       </div>
     </div>
   );
