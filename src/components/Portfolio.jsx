@@ -3,7 +3,7 @@ import PortData from "./portdata.json";
 import { useState } from "react";
 import Post from "./Post";
 import Filter from "./Filter";
-import { motion, AminatePresence, AnimatePresence } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 
 const Portfolio = () => {
   const [posts, setPosts] = useState([]);
@@ -25,11 +25,11 @@ const Portfolio = () => {
         activeCat={activeCat}
       />
       <div className="portfolio-items lg:container lg:masonry-3-col md:masonry-2-col mx-auto">
-        <AnimatePresence>
+        <div>
           {filtered.map((post) => {
             return <Post key={post.id} post={post} posts={posts} />;
           })}
-        </AnimatePresence>
+        </div>
       </div>
     </div>
   );
